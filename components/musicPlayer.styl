@@ -1,0 +1,52 @@
+.component-music-player
+    width: 80%
+    margin: 60px auto
+    overflow: hidden
+    .music-list-link
+        margin-bottom: 10px
+        a
+            color: #009a61
+            text-decoration: none
+    .music-info
+        p
+            margin: 0
+        width: 77%
+        float: left
+        padding-bottom: 10px
+        .volume
+            margin: 8px 0
+            width: 20%
+            height: 30px
+            line-height: 30px
+            display: table
+            span
+                display: table-cell
+                font-size: 14px
+            span:nth-child(2)
+                width: 80%
+        .title
+            margin-bottom: 8px
+            font-weight: bold
+        .artist
+            font-size: 12px
+            margin-bottom: 5px
+    .music-cover
+        float: right
+        width: 20%
+        height: 20%
+        .img-wrap
+            animation: rotate-animation 6s linear infinite;
+        .pause
+            animation-play-state: paused
+        img
+            width: 94%
+            height: 94%
+            border-radius: 50%
+            border: solid 2px rgba(0,0,0,0.2)
+        @keyframes rotate-animation {
+            0% {transform: rotate(0deg)}
+            100% {transform: rotate(360deg)}
+        }
+    .music-control
+        clear: both
+        margin-top: 20px
